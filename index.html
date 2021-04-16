@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+	 <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Survey Form</title>
+<!-- Bootstrap css Link -->
+	 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" >
+<!-- Css Link -->
+    <link rel="stylesheet" href="style.css">
+<!-- All google fonts links -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<!-- pop up box after submiting the form -->
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+</head>
+<body>
+	<div class="container w-50">
+		<h1 class="title text-uppercase text-center mt-5">Survey Form</h1>
+		<h2 class="text-capitalize subtitle text-center">Thank you for taking the time to help us know about your intrest</h2>
+
+			<form>
+				<div class="mb-3">
+				    <label for="name" class="form-label">Name</label>
+				    <input type="name" class="form-control inputbox" placeholder="Enter Your Name" required="required" autocomplete="off">
+			  </div>
+
+			  <div class="mb-3">
+			    <label for="email" class="form-label">Email</label>
+			    <input type="email" class="form-control inputbox" placeholder="Enter Your mail" required="required" autocomplete="off">
+			    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+			  </div>
+
+			  <div class="mb-3">
+			    <label for="dob" class="form-label">Date of Birth</label>
+			    <input type="date" class="form-control inputbox" required="required">
+			  </div>
+
+			  <div class="mb-3">
+			  	 <label for="country" class="form-label">Country</label>
+			   	<select class="form-control inputbox" required="required">
+			   		<option>India</option>
+			   		<option>America</option>
+			   		<option>Australia</option>
+			   		<option>Iran</option>
+			   		<option>Russ</option>
+			   		<option>Other</option>
+			   	</select>
+			  </div>
+
+
+			  <div class="mb-3">
+			  	 <label for="qualification" class="form-label">Qualification</label>
+			   	<select class="form-control inputbox" required="required">
+			   		<option>10th</option>
+			   		<option>12th/Diploma</option>
+			   		<option>Bechlor's Degree</option>
+			   		<option>Master Degree</option>
+			   	</select>
+			  </div>
+
+
+			  <!-- seachable select option -->
+			  <label for="intrest" class="form-label">Select Your Intrest</label>
+			  <div class="select-box">
+        <div class="options-container">
+          <div class="option">
+            <input
+              type="radio"
+              class="radio"
+              id="automobiles"
+              name="category"
+            />
+            <label for="automobiles">Web Designer</label>
+          </div>
+
+          <div class="option">
+            <input type="radio" class="radio" id="film" name="category" />
+            <label for="film">Web Developer</label>
+          </div>
+
+          <div class="option">
+            <input type="radio" class="radio" id="science" name="category" />
+            <label for="science">Graphic Designer</label>
+          </div>
+
+          <div class="option">
+            <input type="radio" class="radio" id="art" name="category" />
+            <label for="art">Digital Marketing</label>
+          </div>
+
+          <div class="option">
+            <input type="radio" class="radio" id="music" name="category" />
+            <label for="music">SEO</label>
+          </div>
+
+          <div class="option">
+            <input type="radio" class="radio" id="travel" name="category" />
+            <label for="travel">Video Editing</label>
+          </div>
+
+          <div class="option">
+            <input type="radio" class="radio" id="sports" name="category" />
+            <label for="sports">Travel & Events</label>
+          </div>
+
+          <div class="option">
+            <input type="radio" class="radio" id="news" name="category" />
+            <label for="news">News & Politics</label>
+          </div>
+
+          <div class="option">
+            <input type="radio" class="radio" id="tutorials" name="category" />
+            <label for="tutorials">Tutorials</label>
+          </div>
+        </div>
+
+        <div class="selected form-control">
+          Select Your Intrest
+        </div>
+
+        <div class="search-box">
+          <input type="text" placeholder="Start Typing..." />
+        </div>
+      </div>
+
+      <div class="mb-3">
+				    <label for="yourself" class="form-label">Describe about yourself</label>
+				   	<textarea class="form-control inputbox" placeholder="Describe Yourself" required="required"></textarea>
+			  </div>
+
+      <button onclick="popup()" id="b" class="btn form-control">Submit</button>
+    </div>
+			</form>
+
+	</div>
+
+		<script type="text/javascript">
+				function popup(){
+				swal("Thank You!", "For give your precious time", "success");
+			}
+	</script>
+
+<script src="main.js"></script>
+
+ <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
